@@ -142,7 +142,7 @@ mpz modularExponentiation(mpz a, mpz b, mpz n)
 }
 
 bool isorder(mpz &a, mpz &b, mpz &n)
-//a在Z_n^*里的阶是不是b
+// is the order of a in Z_n^* equal to b
 {
     mpz mul = a % n;
     for (int i = b.get_ui(); i > 1; i--)
